@@ -1,0 +1,305 @@
+@-ms-viewport{
+  width: device-width;
+  
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+  
+/* body and text */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color:#242323;
+    color:white;
+    font-size:10.5px;
+    text-align:justify;
+    line height:14px;
+    margin:0px;
+    padding:0px;
+    background-image:url('/');
+    background-size:repeat;
+
+}
+
+
+a {
+    text-decoration:none;
+    color:white;
+    text-shadow:0px 0px 2px white;
+    font-family: 'Ubuntu Mono', monospace;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:2px;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    -ms-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    
+}
+
+
+a:hover {
+    text-decoration:none;
+    letter-spacing:2px;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    -ms-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+    
+}
+
+a.tooltip {
+    border-bottom:none;
+    text-decoration: none;
+    color:white;
+
+}
+
+a.tooltip:hover {
+    position: relative;
+}
+
+a.tooltip span {
+    display: none;
+    color:white;
+}
+      
+a.tooltip:hover span {
+    padding: 5px;
+    display: block;
+    z-index: 100;
+    background: #3f3f3f;
+    text-shadow:none;
+    font-size:8.5px;
+    letter-spacing:1px;
+    font-weight:600;
+    text-transform:uppercase;
+    left: -60px;
+    max-width:150px;
+    position: absolute;
+    top: -25px;
+    text-decoration: none;
+}
+
+
+b, strong {
+    letter-spacing:1px;
+    color:#757575;
+    text-shadow:0px 0px 2px #757575;
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+    
+}  
+
+
+i, em {
+    letter-spacing:0px;
+    color:white;
+    text-transform:lowercase;
+    font-family: 'Ubuntu Mono', monospace;
+    letter-spacing:1px;
+    text-shadow:0px 0px 2px white;
+    
+}
+
+/* lists */
+
+li{ 
+    list-style-type: none;
+    text-align:justify;
+    padding:2px;
+    line-height:10px;
+}
+
+li:before { 
+    content:'✩';
+    margin-right:10px;
+    font-weight:600;
+    line-height:13px;
+    color:#B9C6A2;
+    text-shadow:0px 0px 3px #B9C6A2;
+}
+
+ul  { 
+    list-style-type: none;
+}
+
+
+/* container */
+                        
+#container {
+    width:335px;
+    height:400px;
+    position:absolute;
+    background-color:#383838;
+    border-radius:30px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:999;
+    padding:5px;
+
+}  
+
+ /*  title + sidebar  */
+
+.title {
+    font-family: 'Ubuntu Mono', monospace;
+    text-transform:lowercase;
+    width:535px;
+    position:absolute;
+    font-weight:normal;
+    bottom:0px;
+    height:40px;
+    border-bottom-right-radius:30px;
+    line-height:40px;
+    padding-bottom:15px;
+    padding-top:10px;
+    left:0px;
+    font-size:20px;
+    text-align:center;
+    color:#bababa;
+    text-shadow:0px 0px 3px #757575;
+    letter-spacing:4px;
+}
+
+.title i { 
+    letter-spacing:3px;
+    font-size:20px;
+    color:white;
+    text-shadow:0px 0px 3px white;
+}
+
+.title b {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0px;
+    font-weight:700;
+    color:#757575;
+    font-size:20px;
+    text-shadow:0px 0px 2px #dcdcdc;
+    
+}
+
+.title p {
+    width:140px;
+    margin-left:23px;
+    margin-top:0px;
+}
+
+.sb {
+    position:absolute;
+    z-index:99;
+    width:225px;
+    height:225px;
+    top:65px;
+    left:50px;
+    border-radius:5px;
+}
+
+.sb img {
+    width:225px;
+    height:225px;
+    border:1px solid grey;
+    box-shadow:0px 0px 20px #bababa;
+    border-radius:5px;
+}
+
+/*  description  */
+.containerdesc {
+    width:150px;
+    height:30px;
+    position:absolute;
+    z-index:9999;
+    border-radius:3px;
+    background-color:#2f2f2f;
+    padding:10px;
+    left:35px;
+    overflow:hidden;
+    line-height:12px;
+    bottom:80px;
+    text-transform:lowercase;
+
+}
+
+.containerdesc p {
+    height:62px;
+    width:150px;
+    overflow:hidden;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+
+.links {
+    position:absolute;
+    width:140px;
+    height:20px;
+    padding:10px;
+    border-radius:5px;
+    background-color:#2f2f2f;
+    bottom:10px;
+    left:80px;
+    line-height:20px;
+    text-align:center;
+    
+}
+
+.links a {
+    color:#bababa;
+    text-shadow:0px 0px 3px #bababa;
+}
+
+#credit a { 
+    right:10px; ;
+    bottom:10px; 
+    text-align:center;
+    position:fixed; 
+    line-height:10px;
+    color:#757575; 
+    font-size:15px; 
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+ 
+}
+
+#credit i {
+    color:#757575;
+    text-shadow:0px 0px 3px #bababa;
+    font-style:normal;
+}
+
+
+ 
+#credit a:hover { 
+    text-shadow: none;
+    letter-spacing:0px;
+    color:white;
+    text-shadow:0px 0px 3px white;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+ 
+} 
+
+-Headphones-Icon-Size);
+   height:var(--Headphones-Icon-Size);
+   color:var(--Headphones-Icon-Color);
+}
